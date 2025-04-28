@@ -1,15 +1,18 @@
-import transporter from "../config/mailer";
+import transporter from "../config/mailer.js";
 
-//transporter.sendMail - 3 param (email,title,mailtemplate/body)
+export const mailSender = async (email, title, body) => {
+  try {
+    let info = await transporter.sendMail({
+      from: `"StudyNotion || EdTech - by Ahmar" <${process.env.EMAIL_USER}>`,
+      to: email,
+      subject: title,
+      html: body,
+    });
 
-// const mailSender = async (email,title,body) => {
-// let info = await transporter.sendMail({
-//     from: ' DK-SONS || xyz - by Dytes ',
-//     to: `${email}`,
-//     subject: `${title}`,
-//     html: `${body}`,
-// })
-
-// console.log(info);
-// return info;
-//}
+    console.log("Email sent: ", info.messageId);
+    return info;
+  } catch (error) {
+    console.error("Mail sending failed:", error);
+    throw error;
+  }
+};
