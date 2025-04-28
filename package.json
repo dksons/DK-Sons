@@ -1,0 +1,22 @@
+{
+  "name": "dk-sons",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "eject": "echo 'Eject not available in Vite' && exit 1",
+    "server": "npm run dev --prefix server",
+    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm run client\" \"npm run server\"",
+    "client": "npm run dev --prefix frontend"
+  },
+
+
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "workspaces": [
+    "frontend",
+    "server"
+  ]
+}
