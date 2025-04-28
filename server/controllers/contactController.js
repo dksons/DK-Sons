@@ -26,6 +26,22 @@ export const handleContactForm = async (req, res) => {
     html: userTemplate({ name, message }),
   };
 
+  // const userEmail = await mailsender(
+  //   to : body wala email,
+  //   subject: title/overview, 
+  //   userTemplate(body.name,body.message);
+  // )
+
+  // const emailResponse = await mailSender(
+  //   updatedUserDetails.email,
+  //           "Password Updated Successfully",
+  //   passwordUpdated(
+  //     updatedUserDetails.email,
+                
+  //     updatedUserDetails.firstName,
+  //   )
+  // );
+
   try {
     await Promise.all([
       transporter.sendMail(adminMail),
