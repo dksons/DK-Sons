@@ -60,7 +60,7 @@ export const userTemplate = ({ name, message }) => `
           <p>We’ll get back to you as soon as possible. In the meantime, feel free to explore more of our services!</p>
         </div>
         <div class="footer">
-          <p>Best regards,<br> The Team</p>
+          <p>Best regards,<br> DK Sons</p>
         </div>
       </div>
     </body>
