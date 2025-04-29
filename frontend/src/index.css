@@ -1,4 +1,3 @@
-
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -116,6 +115,10 @@
     @apply border-border outline-ring/50;
   }
   body {
+    background-image:url('./assets/IMG_0736.PNG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
     @apply bg-background text-foreground;
   }
 }

@@ -1,4 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  background-image:url('./assets/IMG_0736.PNG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
