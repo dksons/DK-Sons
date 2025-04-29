@@ -1,0 +1,27 @@
+/* Typing Animation */
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .typing-animation {
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #471f0f; /* Create the cursor effect */
+    animation: typing 5s steps(50) 1s infinite  , blink 3s step-end infinite;
+  }
+  
+  /* Cursor Blinking Effect */
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  

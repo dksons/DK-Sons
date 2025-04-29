@@ -1,0 +1,12 @@
+.logo {
+  background-image: url('../../../assets/Logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon{
+  background-image: url('../../../assets/menu.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
