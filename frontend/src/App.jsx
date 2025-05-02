@@ -6,7 +6,7 @@ import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div className="w-screen min-h-screen  flex flex-col ">
+    <div className=" min-h-screen  flex flex-col ">
       <div className='fixed z-50'>
         <Nav />
       </div>

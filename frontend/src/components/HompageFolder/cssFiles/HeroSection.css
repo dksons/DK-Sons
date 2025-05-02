@@ -1,0 +1,55 @@
+/* Typing Animation */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cedarville+Cursive&family=Merienda:wght@300..900&family=Outfit&display=swap');
+body{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight:800;
+  font-style: normal;
+}
+.bungee-tint-regular {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.merienda{
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .typing-animation {
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 19px solid transparent; /* Create the cursor effect */
+    animation: typing 5s steps(510) 1s infinite , blink 0.65s infinite;
+  }
+  
+  /* Cursor Blinking Effect */
+  @keyframes blink {
+    52% {
+      border-color: transparent;
+      
+    }
+  }
+  

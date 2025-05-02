@@ -1,5 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cedarville+Cursive&family=Merienda:wght@300..900&family=Outfit&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
+
+body{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
 @custom-variant dark (&:is(.dark *));
 
