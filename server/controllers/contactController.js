@@ -25,8 +25,8 @@ export const handleContactForm = async (req, res) => {
       ),
     ]);
 
-    res.status(200).json({ message: "Emails sent successfully" });
+    res.status(200).json({success:true, message: "Emails sent successfully" });
   } catch (error) {
-    res.status(500).json({ error: "Failed to send emails" });
+    res.status(500).json({success:false, error: "Failed to send emails" });
   }
 };
