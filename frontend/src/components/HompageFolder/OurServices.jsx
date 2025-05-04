@@ -49,8 +49,8 @@ function OurServices() {
     const updateLineHeight = () => {
       const scrollY = window.scrollY || window.pageYOffset; //to know the the top to current window height 
       const viewportHeight = window.innerHeight; //the viewPort height
-      const visibleHeight = scrollY-viewportHeight-350; //  top to current window height - Vp heigth for beetter Svg performance
-console.log(scrollY,viewportHeight);
+      const visibleHeight = scrollY-viewportHeight-450; //  top to current window height - Vp heigth for beetter Svg performance
+
 
       setLineHeight(visibleHeight);
     };
@@ -66,10 +66,7 @@ console.log(scrollY,viewportHeight);
     };
   }, []);
     
-  useEffect(()=>{
-    console.log(lineHeight);
-    
-  },[lineHeight])
+
 
   return (
     <section className="relative w-screen lg:h-[210vh] py-20 px-4 md:px-12 min-h-screen" ref={contentRef}>

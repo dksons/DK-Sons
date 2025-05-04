@@ -10,8 +10,8 @@ function Nav() {
 
   useEffect(()=>{
 const handleWidth=()=>{
-  console.log(window.innerWidth)
-  if(window.innerWidth<700){
+
+  if(window.innerWidth<800){
   setHamburgerVisible(true)
   } else  {  setHamburgerVisible(false)
     setMenuVisible(true)
@@ -21,7 +21,7 @@ const handleWidth=()=>{
 handleWidth();
     window.addEventListener('resize',handleWidth)
 
-  return ()=>  window.addEventListener('resize',handleWidth)
+
       },[])
 
 
@@ -48,13 +48,13 @@ handleWidth();
       <Hamburger/>
      </div>}
     <div className={`flex lg:w-[50%] w-[60vw]  ${hamburgerVisible?'bg-black/65 text-2xl rounded top-0 right-0 w-fit h-screen justify-end items-end ':''}  flex-col justify-between items-end   
-    absolute  text-[20px] lg:text-lg text-black lg:top-0 lg:items-center`}>
+    absolute md:justify-end md:items-end  md:text-[26px] md:bg-black/65 lg:text-lg md:right-10 text-black md:top-0  lg:top-0 lg:items-center`}>
 {<div>
 {MenuVisible && (
   <div
-    className={`m-1 flex sm:absolute  sm:right-0 sm:flex-col  ${hamburgerVisible?'w-fit  h- h-[90vh] top-0 z-50 justify-around items-center  ':''}
+    className={`m-1 flex sm:absolute md:flex-row top-0 sm:right-0 sm:flex-col  ${hamburgerVisible?'w-fit   h-[90vh] top-0 z-50 justify-around items-center  ':''}
                w-full flex-col  px-3 py-5   z-50 
-                lg:flex-row lg:w-full lg:justify-around lg:right-10 text-white `} >
+                lg:flex-row md:flex-row  sm:right-10 lg:w-full lg:justify-around lg:right-10 text-white `} >
 <Subnav hamburgerVisible={hamburgerVisible}/>
   </div>
 )}
