@@ -6,10 +6,18 @@ import React from "react";
 
 const Home = () => {
   return (
+<<<<<<< Updated upstream
     <div className="w-full  h-full overflow-hidden">
       <div>
         <HeroSection />
       </div>
+=======
+    <div className=''>
+      <HeroSection/>
+    </div>
+  )
+}
+>>>>>>> Stashed changes
 
       <div className="  flex justify-center items-center">
         <Introduction />
