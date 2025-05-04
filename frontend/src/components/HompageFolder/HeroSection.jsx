@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import vdo from '../../assets/HeroSectioonVideo1.MOV';
 import './cssFiles/HeroSection.css';
@@ -16,7 +17,7 @@ function HeroSection() {
 
 
   return (
-    <div className="relative w-full h-screen bg-[url('../assets/IMG_0736.PNG')] bg-cover bg-center overflow-hidden">
+    <div className="relative h-screen bg-[url('../assets/IMG_0736.PNG')] bg-cover bg-center overflow-hidden">
       {showVideo && (
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-0 transition-opacity duration-700 ease-in-out"
@@ -30,8 +31,9 @@ function HeroSection() {
           Your browser does not support HTML5 video.
         </video>
       )}
-     
+
       <div className="relative z-20 flex flex-col items-start justify-center h-full px-4 text-white font-extrabold">
+
    
 <div className='w-full h-[40%]'>
 <center>
@@ -61,6 +63,7 @@ function HeroSection() {
         </div>
 </center>
 </div>
+
 
       </div>
     

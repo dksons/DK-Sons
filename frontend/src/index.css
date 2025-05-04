@@ -131,3 +131,28 @@ body{
     @apply bg-background text-foreground;
   }
 }
+
+/* in your global CSS (e.g. index.css) */
+
+.bg-brown-vignette {
+  /* fallback */
+  background-color: #8b3e04;
+  /* radial gradient from warm center to dark edges */
+  background-image: radial-gradient(
+    circle at center,
+    #8b3e04 0%,
+    #180a00 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.story-bg {
+  /* a soft radial glow fading into your dark blue/black */
+  background: radial-gradient(
+    circle at top center,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(0, 8, 20, 0.9) 100%
+  );
+}
+

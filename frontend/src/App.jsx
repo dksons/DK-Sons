@@ -2,7 +2,11 @@ import React from 'react'
 import Nav from './components/common/Nav'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
+
 import Footer from './components/common/Footer'
+
+import ContactUs from './pages/ContactUs'
+
 
 
 const App = () => {
@@ -14,7 +18,10 @@ const App = () => {
       </div>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        {/* <Route path="/about-us" element={<Home />}></Route> */}
+
+
+        <Route path="/contact-us" element={<ContactUs />}></Route>
+
       </Routes>
       </div>
       <div className='r -z-1 bottom-0   flex justify-center  flex-col items-center bg-gradient-to-r p2  from-white/40 to-white/60'>
