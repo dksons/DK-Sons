@@ -1,8 +1,8 @@
 
 import React, { useState } from "react";
 import "./cssFiles/Nav.css";
+import Hamburger from "../HompageFolder/ui/Hamburger";
 import { Link } from "react-router-dom";
-import Hamburger from "../ui/Hamburger";
 
 function Nav() {
   const [MenuVisible, setMenuVisible] = useState(false);
