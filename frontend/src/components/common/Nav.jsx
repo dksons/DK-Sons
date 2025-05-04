@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import React, { useEffect, useState } from 'react'
 import './cssFiles/Nav.css'
 import { Link } from 'react-router-dom'
@@ -81,6 +82,23 @@ function Nav() {
     "Contact-Us",
   ]);
   return (
+=======
+import React, { useState } from "react";
+import "./cssFiles/Nav.css";
+import { Link } from "react-router-dom";
+import Hamburger from "../ui/Hamburger";
+
+function Nav() {
+  const [MenuVisible, setMenuVisible] = useState(false);
+
+  const [Links, setLinks] = useState([
+    "Our Services",
+    "Our Vision",
+    "Testimonials",
+    "Contact-Us",
+  ]);
+  return (
+>>>>>>> Stashed changes
     <header className="w-[99vw] text-white flex px-1 justify-between items-center z-40">
       <div className="flex items-center justify-center pl-3">
         <span className="logo w-18 h-22 inline-block"></span>
@@ -135,6 +153,9 @@ function Nav() {
           )}
         </div>
       </div>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </header>
   );
