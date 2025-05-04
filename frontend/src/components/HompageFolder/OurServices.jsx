@@ -50,7 +50,7 @@ function OurServices() {
       const scrollY = window.scrollY || window.pageYOffset; //to know the the top to current window height 
       const viewportHeight = window.innerHeight; //the viewPort height
 
-      const visibleHeight = scrollY-viewportHeight-350; //  top to current window height - Vp heigth for beetter Svg performance
+      const visibleHeight = scrollY-viewportHeight-450; //  top to current window height - Vp heigth for beetter Svg performance
 // console.log(scrollY,viewportHeight);
 
 

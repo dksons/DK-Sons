@@ -2,6 +2,12 @@ import React from 'react';
 import img1 from '../../assets/img1.png'
 
 function OurProducts() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/catalog.pdf"; // Make sure the PDF is in the public folder
+    link.download = "catalog.pdf";
+    link.click();
+  };
   const newArray=[
     {
       title: "Brass Hardware",
@@ -60,6 +66,7 @@ function OurProducts() {
   ]
   return (
     <section>
+
       <div className="z-40 mx-auto p-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {newArray.map((product, idx) => (
@@ -85,7 +92,11 @@ function OurProducts() {
             </div>
           ))}
         </div>
+       
       </div>
+      <div onClick={handleDownload} className="cursor-pointer text-blue-600 hover:underline w-full flex justify-center">
+      <p className='bg-gradient-to-r from-blue-800 via-slate-700 text-xl to-red-800 hover:scale-110 duration-300 transition-all bg-clip-text text-transparent'>View More</p>
+    </div>
     </section>
   );
 }
