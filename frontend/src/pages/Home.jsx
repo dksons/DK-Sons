@@ -21,7 +21,7 @@ const Home = () => {
         <Introduction />
       </div>
 
-      <div className=" w-screen  flex justify-center  flex-col items-center  from-white/40 to-white/60" >
+      <div className=" w-screen  flex justify-center bg-gradient-to-r  flex-col items-center  from-white/40 to-white/60" >
         <h2 className="text-5xl font-bold ml-2 bg-gradient-to-r  mb-5 mt-10 from-black/40 via-indigo-400 to-pink-500 inline-block bg-clip-text text-transparent">
           OUR SERVICES
         </h2>
