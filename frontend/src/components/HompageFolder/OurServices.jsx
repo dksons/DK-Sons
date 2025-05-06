@@ -49,8 +49,10 @@ function OurServices() {
     const updateLineHeight = () => {
       const scrollY = window.scrollY || window.pageYOffset; //to know the the top to current window height 
       const viewportHeight = window.innerHeight; //the viewPort height
-      const visibleHeight = scrollY-viewportHeight-350; //  top to current window height - Vp heigth for beetter Svg performance
+
+      const visibleHeight = scrollY-viewportHeight-450; //  top to current window height - Vp heigth for beetter Svg performance
 // console.log(scrollY,viewportHeight);
+
 
       setLineHeight(visibleHeight);
     };
@@ -66,16 +68,13 @@ function OurServices() {
     };
   }, []);
     
-  useEffect(()=>{
-    // console.log(lineHeight);
-    
-  },[lineHeight])
+
 
   return (
-    <section className="relative w-screen lg:h-[210vh] py-20 px-4 md:px-12 min-h-screen" ref={contentRef}>
+    <section className="relative w-screen lg:h-[210vh] py-20 px-4  md:px-12 min-h-screen" ref={contentRef}>
 
       <svg
-        className="absolute left-1/2 top-1/2 bg-gradient-to-b from-indigo-500 via-purple-500  to-indigo-700 -z-1"
+        className="absolute left-1/2 top-1/2 bg-gradient-to-b from-indigo-500 via-purple-500  to-indigo-700 z-1"
         style={{ height: `${lineHeight}px`, top: '0' }}
         width="5"
       >

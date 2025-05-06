@@ -37,9 +37,9 @@ function HeroSection() {
    
 <div className='w-full h-[40%]'>
 <center>
-<h1 className="text-[29px] font-extrabold  sm:text-[20px] md:text-[25px] lg:text-[30px] xl:text-[55px] overflow-hidden whitespace-nowrap mb-3">
+<h1 className="text-[29px] font-extrabold  sm:text-[20px] md:text-[25px] lg:text-[30px] xl:text-[80px] overflow-hidden whitespace-nowrap mb-3">
   <span className="pb-2">
-      Excellence in Metal    Hardware
+      Excellence in Metal  Hardware
      <span className=""><br/></span> 
    {}  Since 1990
   </span>
