@@ -6,7 +6,21 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
      
         <div>
-          <h1 className="text-4xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-b from-blue-400 via-red-500 to-indigo-500">DK-SONS</h1>
+          {/* <h1 className="text-4xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-b from-blue-400 via-red-500 to-indigo-500">DK-SONS</h1> */}
+          <div className='flex'>
+      
+            <span className='inline-block
+            
+
+            
+            
+            
+            text-white text-[52px] p-1 text-center' >|</span>
+            <div className='flex items-center tracking-wide flex-col justify-center'>
+              <span className='block text-clip text-[20px]'>DK SONS</span>
+              <span className='block text-white text-[10px]'>METAL HARDWARE</span>
+            </div>
+          </div>
           <p className="text-sm text-zinc-400">
             Your one-stop destination for quality products and great deals.
           </p>

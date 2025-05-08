@@ -22,16 +22,15 @@ const Home = () => {
       </div>
 
       <div className=" w-screen  flex justify-center  flex-col items-center bg-no-repeat bg-center bg-contain bg-brown-vignette" >
-        <h2 className="text-5xl font-bold ml-2 bg-gradient-to-r  mb-5 mt-10 from-black/40 via-indigo-400 to-pink-500 inline-block bg-clip-text text-transparent">
+        <h2 className="text-5xl font-bold ml-2 bg-gradient-to-r  mb-5 mt-10 from-yellow-500 via-orange-600 to-rose-700  inline-block bg-clip-text text-transparent">
           OUR SERVICES
         </h2>
-
 
         <OurServices />
       </div>
 
       <div className=" z-10 flex lg:h-screen justify-center flex-col items-center bg-gradient-to-r p2  from-white/50 via-orange-100  to-white/42">
-      <h2 className="text-6xl font-bold ml-2 bg-gradient-to-r  mb-5 mt-10 from-black/40 via-indigo-400 to-pink-500 inline-block bg-clip-text text-transparent">
+      <h2 className="text-6xl font-bold ml-2 bg-gradient-to-r  mb-5 mt-10 from-yellow-500 via-orange-600 to-rose-700 inline-block bg-clip-text text-transparent">
           OUR PRODUCTS
         </h2>
         <OurProducts />
