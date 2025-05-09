@@ -109,9 +109,9 @@ function About_1() {
                     <div className='relative flex h-full box-border w-full   flex-col'>
                         <img src={img2} alt="" className='box1 lg:w-[82%] w-[80%] ml-5 lg:h-[27%] h-[22%] rounded' />
                         <img src={img1} alt="" className='box2 lg:w-[58%] w-[57%] lg:h-[53%] top-[18%] lg:top-[22%]  lg:left-[39%]  left-[39%] absolute'  />
-                        <div className='box3 flex justify-center items-center relative lg:left-6  left-7 lg:top-4 top-1 h-60 lg:h-78 lg:w-42 w-39 bg-gradient-to-b  from-black/70 to-amber-600/60'>
+                        <div className='box3 flex justify-center items-center relative lg:left-6  left-7 lg:top-4 top-1 h-50 lg:h-78 lg:w-42 w-35 bg-gradient-to-b  from-black/70 to-amber-600/60'>
 
-                            <span className='lg:text-6xl text-5xl w-full text-white font-extrabold flex justify-around items-center h-[80%] flex-col '>
+                            <span className='lg:text-6xl text-4xl w-full text-white font-extrabold flex justify-around items-center h-[80%] flex-col '>
 
                                 <img src={badge} alt="" className='w-16 ' />
                                <div className='justify-start flex text-center'>
