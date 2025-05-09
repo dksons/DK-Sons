@@ -55,7 +55,7 @@ function About_2() {
   return (
     <div className='box lg:h-[45vh] h-screen flex gap-4 items-center justify-center  text-white text-2xl font-bold'>
      <div className=' w-full lg:h-full h-[80%] flex lg:flex-row flex-col items-center justify-around'>
-        <div className='lg:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-white/90 via-red-300 to-indigo-500 text-4xl text-center w-80'>
+        <div className='lg:text-5xl bg-gradient-to-r bg-clip-text text-transparent from-orange-200 via-yellow-300 to-orange-700 text-4xl text-center w-80'>
         Our Factory in Numbers
         </div>
      <div  className='lg:text-5xl text-3xl flex  justify-center items-center flex-col'>
