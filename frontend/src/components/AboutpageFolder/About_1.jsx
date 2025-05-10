@@ -127,7 +127,7 @@ function About_1() {
                 </div>
                 <div className="right lg:mt-0 mt-5 flex-1 text-white font-extrabold h-full ">
                     <div className='px-4 py-4 box-border'>
-                        <h1 className='lg:text-3xl text-2xl tracking-wide text-yellow-200'>
+                        <h1 className='lg:text-3xl text-xl mt-10 tracking-wide text-yellow-200'>
                             WHO WE ARE
                         </h1>
                         <div className='box4 lg:text-6xl text-2xl mt-6 w-full tracking-widest'>

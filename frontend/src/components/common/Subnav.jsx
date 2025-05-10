@@ -24,10 +24,6 @@ function Subnav({ hamburgerVisible }) {
         About-us
       </NavLink>
 
-      <NavLink to="/Testimonials" className={({ isActive }) => `mt-1 ${linkClass(isActive)}`}>
-        Testimonials
-      </NavLink>
-
       <NavLink to="/Contact-Us" className={({ isActive }) => `mt-2 ${linkClass(isActive)}`}>
         Contact-Us
       </NavLink>
