@@ -18,7 +18,7 @@ const ContactUs = () => {
         <ContactFormSection />
       </section>
     </div>
-  
+  </div>
   );
 };
 
