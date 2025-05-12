@@ -5,20 +5,12 @@ import React from "react";
 const ContactUs = () => {
   return (
 
-
     <div className="mt-28 text-white">
-
- 
-
-    <div className="pt-10 text-white ">
-      {/* Section 1 */}
-
       <section className="mx-auto mt-20 mb-10 flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-white lg:flex-row ">
         <InfoSection />
         <ContactFormSection />
       </section>
     </div>
-  </div>
   );
 };
 
