@@ -5,16 +5,21 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const handleContactForm = async (req, res) => {
-  const { name, email, message } = req.body;
+  const  name  = req.body.firstName;
+  const email=req.body.email
+ const message= req.body.message
 
+  
   if (!name || !email || !message) {
     return res.status(400).json({ error: "Missing required fields" });
   }
+  
+  console.log(name,email,message,process.env.ADMIN_EMAIL);
 
   try {
     await Promise.all([
       mailSender(
-        process.env.ADMIN_EMAIL,
+        email,
         "New Contact Form Submission",
         adminTemplate({ name, email, message })
       ),

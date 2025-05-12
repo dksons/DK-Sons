@@ -3,6 +3,6 @@ import { handleContactForm } from "../controllers/contactController.js";
 
 const router = express.Router();
 
-router.post("/contact", handleContactForm);
+router.post("/contact-us", handleContactForm);
 
 export default router;
