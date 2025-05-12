@@ -3,7 +3,7 @@ import transporter from "../config/mailer.js";
 export const mailSender = async (email, title, body) => {
   try {
     let info = await transporter.sendMail({
-      from: ' DK Sons || Metal Hardware - by DK Sons ',
+     from:process.env.ADMIN_EMAIL, // FIXED
       to: email,
       subject: title,
       html: body,

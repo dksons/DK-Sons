@@ -6,6 +6,7 @@ function Sector() {
 const sectors = [
     {
       title: "Equestrian",
+       icon:'🐎',
       items: [
         "Snaffle bits and stirrups",
         "Halters and bridle components",
@@ -15,6 +16,8 @@ const sectors = [
     },
     {
       title: "Marine",
+       icon:'🚤',
+      
       items: [
         "Boat hardware and fittings",
         "Sailing equipment components",
@@ -24,6 +27,7 @@ const sectors = [
     },
     {
       title: "Leather Industry",
+       icon:'👜',
       items: [
         "Buckles and closures",
         "Decorative hardware",
@@ -33,6 +37,7 @@ const sectors = [
     },
     {
       title: "Pet Industry",
+      icon:'🦮',
       items: [
         "Dog training collars and chains",
         "Martingale components",
@@ -63,9 +68,14 @@ const sectors = [
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-6xl mx-auto ">
         {sectors.map((sector, index) => (
           <div key={ index } className="group relative pl-4 border-l-4 border-blue-500 bg-black/30 p-5 rounded-4xl hover:bg-white/80 scale-110 duration-300 hover:text-black ">
-            <h3 className="md:text-3xl font-semibold mb-3 text-blue-400 group-hover:text-black transition-colors duration-300">
+        
+        
+       <div className='flex flex-row w-fit justify-start items-center mb-4'>
+        <span className='mr-2  text-3xl'>{sector.icon}</span>
+             <h3 className="md:text-3xl font-semibold  text-blue-400 group-hover:text-black transition-colors duration-300">
               { sector.title }
             </h3>
+       </div>
             {/* <ul className="list-disc list-inside space-y-1">
               { sector.items.map( ( item, idx ) => (
                 <li key={ idx } className="pl-1">{ item }</li>

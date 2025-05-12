@@ -29,10 +29,10 @@ function About_2() {
   };
 
   const CountValues = () => {
-    startCounter('projects', 129, 30);
-    startCounter('experience', 29, 80);
-    startCounter('marketing', 29, 90);
-    startCounter('workers', 56, 60);
+    startCounter('projects', 129, 20);
+    startCounter('experience', 33, 50);
+    startCounter('marketing', 29, 50);
+    startCounter('workers', 56, 50);
   };
 
   useEffect(() => {
