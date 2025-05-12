@@ -1,5 +1,10 @@
 import React from 'react';
-import img1 from '../../assets/img1.png'
+import img1 from '../../assets/brass.jpeg'
+import img2 from "../../assets/zinchardware.jpg";
+import img3 from "../../assets/steel.jpeg";
+import img4 from "../../assets/iron2.jpg";
+import img5 from "../../assets/chain.jpeg";
+
 
 function OurProducts() {
   const handleDownload = () => {
@@ -11,7 +16,7 @@ function OurProducts() {
   const newArray=[
     {
       title: "Brass Hardware",
-      image: {img1}, //set your image accordingly
+      image: img1, //set your image accordingly
       alt: "Brass Hardware",
       items: [
         "Snap Hooks (Bolt, Push Gate, Scissors)",
@@ -22,7 +27,7 @@ function OurProducts() {
     },
     {
       title: "Zinc Hardware",
-      image: "path/to/zinc-thumbnail.jpg",
+      image: img2,
       alt: "Zinc Hardware",
       items: [
         "Buckles and Adjusters",
@@ -33,7 +38,7 @@ function OurProducts() {
     },
     {
       title: "Steel Hardware",
-      image: "path/to/steel-thumbnail.jpg",
+      image:  img3 ,
       alt: "Steel Hardware",
       items: [
         "Carabiner Hooks",
@@ -44,7 +49,7 @@ function OurProducts() {
     },
     {
       title: "Iron Hardware",
-      image: "path/to/iron-thumbnail.jpg",
+      image: img4,
       alt: "Iron Hardware",
       items: [
         "Bull Snaps",
@@ -54,7 +59,7 @@ function OurProducts() {
     },
     {
       title: "Chains",
-      image: "path/to/chains-thumbnail.jpg",
+      image: img5,
       alt: "Chains",
       items: [
         "Twisted Chains",
@@ -75,7 +80,7 @@ function OurProducts() {
               className="bg-gradient-to-b from-white via-slate-200  to-yellow-50 transition-transform hover:scale-103 shadow-lg rounded-lg overflow-hidden hover:shadow-2xl  duration-300"
             >
               <img
-                src={img1} 
+                src={product.image} 
                 alt={product.alt}
                 className="w-full h-48 object-cover transition-transform duration-300 hover:scale-125"
               />
@@ -83,10 +88,10 @@ function OurProducts() {
                 <h3 className="text-xl font-semibold mb-2  transition-transform duration-300 hover:translate-x-1 hover:translate-y-1 hover:text-gray-800">
                   {product.title}
                 </h3>
-                <ul className="space-y-2 list-disc list-inside hover:scale-105 duration-300 text-gray-700">
-                  {product.items.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
+                <ul className="list-disc list-outside pl-5 space-y-1 text-gray-700 text-sm md:text-base leading-relaxed">
+                  { product.items.map( ( item, i ) => (
+                    <li key={ i }>{ item }</li>
+                  ) ) }
                 </ul>
               </div>
             </div>
@@ -95,7 +100,7 @@ function OurProducts() {
        
       </div>
       <div onClick={handleDownload} className="cursor-pointer text-blue-600 hover:underline w-full flex justify-center">
-      <p className='bg-gradient-to-r from-blue-800 via-slate-700 text-xl to-red-800 hover:scale-110 duration-300 transition-all bg-clip-text text-transparent'>View More</p>
+        <p className='bg-gradient-to-r from-yellow-600 via-red-500 text-xl to-rose-600 hover:scale-110 duration-300 transition-all bg-clip-text text-transparent'>View More</p>
     </div>
     </section>
   );

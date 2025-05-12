@@ -74,10 +74,9 @@ function OurServices() {
     <section className="relative w-screen lg:h-[210vh] py-20 px-4  md:px-12 min-h-screen" ref={contentRef}>
 
       <svg
-        className="absolute left-1/2 top-1/2 bg-gradient-to-b from-indigo-500 via-purple-500  to-indigo-700 z-1"
+        className="absolute left-1/2 top-1/2 bg-gradient-to-b from-red-500 via-yellow-500  to-rose-700 z-1"
         style={{ height: `${lineHeight}px`, top: '0' }}
-        width="5"
-      >
+        width="5">
         <defs>
           <linearGradient id="line-gradient" x1="0" y1="0" x2="0" y2="1">
             <stop offset="20%" stopColor="#8b5cf6" />
@@ -112,7 +111,7 @@ function OurServices() {
                   isLeft ? 'md:mr-auto md:ml-12' : 'md:ml-auto md:mr-12'
                 }`}
               >
-                <h3 className="text-2xl font-semibold mb-4 m z-59 text-indigo-300 group-hover:text-pink-400 transition-colors duration-300">
+                <h3 className="text-2xl font-semibold mb-4 m z-59 text-yellow-200 group-hover:text-pink-400 transition-colors duration-300">
                   {service.title}
                 </h3>
                 <ul className="list-disc list-inside text-gray-200 space-y-2 lg:text-lg text-sm">

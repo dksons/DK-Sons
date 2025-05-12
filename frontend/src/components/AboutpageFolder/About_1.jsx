@@ -134,11 +134,11 @@ function About_1() {
                             Provides Your Best <span className='bg-gradient-to-r bg-clip-text text-transparent from-orange-200 via-yellow-300 to-orange-700'>Quality</span> Manufacturing
                              <span  className='ml-1 bg-gradient-to-r bg-clip-text text-transparent from-orange-200 via-yellow-300 to-orange-700'>Products</span>
                         </div>
-                        <div className='flex lg:mt-10 mt-3 lg:flex-row justify-between  flex-col w-full'>
+                        <div className='flex lg:mt-10 items-center lg:flex-row justify-between  flex-col w-full'>
                             <div>
-                               <div className='lg:w-[38%] tracking-widest w-[48%] flex-row flex items-center justify-around'>
+                               <div className='lg:w-[45%] tracking-widest w-[48%] flex-row flex items-center justify-around'>
                                 <img src={icon} alt="" className='w-4 h-4' />
-                               <h1 className='text-2xl mt-5 mb-5'>
+                               <h1 className='text-2xl ml-1 mt-5 mb-5'>
                                     Our Vision
                                 </h1>
                                </div>
@@ -149,9 +149,9 @@ function About_1() {
                                </span>
                             </div>
                             <div>
-                            <div className='lg:w-[45%]  w-[55%]  mt-7 flex-row flex items-center justify-around'>
+                            <div className='lg:w-[50%]  w-[55%]  flex-row flex items-center justify-around'>
                                 <img src={icon} alt="" className='w-4 h-4' />
-                               <h1 className='text-2xl mt-4 mb-5 tracking-widest'>
+                               <h1 className='text-2xl mt-4 mb-5 ml-1 tracking-widest'>
                                     Our Mission
                                 </h1>
                                </div>

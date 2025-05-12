@@ -26,11 +26,11 @@ const Testimonial = () => {
     ])
   return (
     <div className=" w-[100vw] py-16 flex flex-col ">
- <h1 className='w-full text-start ml-10 text-4xl bg-gradient-to-r bg-clip-text text-transparent  from-orange-200 via-yellow-300 to-orange-700 lg:text-5xl'>
+ <h1 className='w-full text-start ml-10 text-4xl bg-gradient-to-r bg-clip-text text-transparent px-8 from-orange-200 via-yellow-300 to-orange-700 lg:text-5xl'>
   Testimonials
 </h1>
 
-  <div className=" py-16 flex flex-col lg:flex-row items-center" >
+  <div className=" py-16 flex flex-col lg:flex-row items-center lg:px-15" >
   <div className="  flex justify-center lg:w-[40%] items-center w-[95%] px-4 bg  ">
       <div  className="hide-scrollbar flex flex-row max-w-7xl h-full space-x-8 overflow-x-auto pb-8">
       { content.map((val,i)=>(

@@ -46,14 +46,14 @@ const sectors = [
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 tracking-wide
         bg-gradient-to-br from-purple-600 via-blue-500 to-slate-300 bg-clip-text text-transparent">
 
-       <span className='lg:text-9xl   bg-gradient-to-l from-purple-900 via-red-500 to-indigo-900 bg-clip-text text-transparent'>
+       <span className='lg:text-9xl   bg-gradient-to-l from-white-500 via-slate-100 to-gray-100 bg-clip-text text-transparent'>
        SECTORS 
        </span>
         <span className='lg:hidden text-3xl'>
             <br className=''/>
         WE SERVE
          </span>
-            <span className=' lg:block bg-gradient-to-br from-white/10 via-red-400 to-indigo-800 bg-clip-text text-transparent hidden'>
+            <span className=' lg:block bg-gradient-to-br from-white-500 via-slate-300 to-gray-100 bg-clip-text text-transparent hidden'>
         WE SERVE
             </span>
             </h2>
@@ -62,12 +62,21 @@ const sectors = [
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-6xl mx-auto ">
         {sectors.map((sector, index) => (
-          <div key={index} className="relative pl-4 border-l-4 border-blue-500 bg-black/30 p-5 rounded-4xl hover:bg-white/60 scale-110 duration-300 hover:text-black">
-            <h3 className="md:text-3xl font-semibold mb-3 text-blue-400">{sector.title}</h3>
-            <ul className="list-disc list-inside space-y-1 ">
-              {sector.items.map((item, idx) => (
-                <li key={idx} className="pl-1">{item}</li>
-              ))}
+          <div key={ index } className="group relative pl-4 border-l-4 border-blue-500 bg-black/30 p-5 rounded-4xl hover:bg-white/80 scale-110 duration-300 hover:text-black ">
+            <h3 className="md:text-3xl font-semibold mb-3 text-blue-400 group-hover:text-black transition-colors duration-300">
+              { sector.title }
+            </h3>
+            {/* <ul className="list-disc list-inside space-y-1">
+              { sector.items.map( ( item, idx ) => (
+                <li key={ idx } className="pl-1">{ item }</li>
+              ) ) }
+            </ul> */}
+            <ul className="list-disc list-outside pl-6 space-y-2">
+              { sector.items.map( ( item, idx ) => (
+                <li key={ idx } className="text-base leading-relaxed">
+                  { item }
+                </li>
+              ) ) }
             </ul>
           </div>
         ))}
