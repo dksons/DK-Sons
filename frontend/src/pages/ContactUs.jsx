@@ -6,8 +6,6 @@ const ContactUs = () => {
   return (
 
 
-    <div className="mt-28 text-white">
-
     <div className="pt-10 text-white bg-brown-vignette">
 
     <div className="pt-10 text-white bg-brown-vignette">
