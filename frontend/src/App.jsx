@@ -7,6 +7,8 @@ import Footer from './components/common/Footer'
 
 import ContactUs from './pages/ContactUs'
 import About from './pages/About'
+import OurProducts from './components/HompageFolder/OurProducts'
+import Privacy from './components/common/privacy'
 
 
 
@@ -47,6 +49,9 @@ const scrolling=debounceScroll(setisNav,600)
         <Route path="/" element={<Home />}></Route>
         <Route path="/contact-us" element={<ContactUs />}></Route>
         <Route path="/about-us" element={<About />}></Route>
+           <Route path="/privacy-policy" element={<Privacy />}></Route>
+        
+        
       </Routes>
       </div>
       <div className='r -z-1 bottom-0   flex justify-center  flex-col items-center bg-gradient-to-r p2  from-white/40 to-white/60'>

@@ -9,14 +9,14 @@ function Introduction() {
     <section className="w-full  flex flex-col items-center justify-center bg-gradient-to-br from-white/30 to-white/80  text-center">
       <div className="max-w-3xl mb-14 py-8 px-5">
         <h1 className="lg:text-5xl text-2xl uppercase font-extrabold mb-6 tracking-widest">
-          <span className="bg-gradient-to-r from-yellow-600 via-orange-600 to-rose-700 bg-clip-text text-transparent font-semibold">
+          <span className="bg-gradient-to-l from-yellow-600 via-orange-600 to-rose-700 bg-clip-text text-transparent font-semibold">
             Our Story
           </span>
         
         </h1>
-        <p className="lg:text-2xl  text-gray-700 leading-relaxed">
+        <div className="lg:text-2xl  text-start text-gray-700 leading">
           At{" "}
-          <span className="bg-gradient-to-r from-yellow-600 to-red-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-l from-yellow-900 to-red-500 bg-clip-text text-transparent">
             {" "}
             DK-SONS
           </span>
@@ -24,11 +24,11 @@ function Introduction() {
           meticulous craftsmanship and superior materials. Our extensive range
           of brass, zinc, steel, and iron products serves multiple industries
           with uncompromising 
-          <span className="bg-gradient-to-r  from-yellow-600 to-red-500 bg-clip-text text-transparent mr-2">
+          <span className="bg-gradient-to-r   from-yellow-600 to-red-500 bg-clip-text text-transparent mr-2">
             {` `}quality and precision
           </span>
           from concept to creation.
-        </p>
+        </div>
       </div>
 
       <div className="w-full mx-auto flex relative   justify-center items-center flex-1 flex-col bg-[#000814]/90 py-12 px-2">

@@ -1,4 +1,5 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -30,10 +31,10 @@ const Footer = () => {
         <div>
           <h2 className="font-semibold text-lg mb-3">Quick Links</h2>
           <ul className="space-y-2 text-zinc-300 text-sm">
-            <li><a href="#">Electronics</a></li>
-            <li><a href="#">Fashion</a></li>
-            <li><a href="#">Home & Kitchen</a></li>
-            <li><a href="#">Health & Beauty</a></li>
+            <li><Link to='/'>Steel products</Link></li>
+            <li><Link to='/our-products'>Metal Products</Link></li>
+            <li><Link to="/our-products">Zinc Products</Link></li>
+           
           </ul>
         </div>
 
@@ -53,13 +54,13 @@ const Footer = () => {
           <h2 className="font-semibold text-lg mb-3">Legal</h2>
           <ul className="space-y-2 text-zinc-300 text-sm">
             <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
           </ul>
         </div>
       </div>
 
       <div className="mt-10 border-t border-zinc-700 pt-6 text-center text-sm text-zinc-500">
-        &copy; {new Date().getFullYear()} ShopEase. All rights reserved.
+        &copy; {new Date().getFullYear()} All rights reserved.
       </div>
     </footer>
   );

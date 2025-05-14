@@ -15,10 +15,10 @@ function OurProjects() {
         </h1>
         <div className="max-w-xl text-base lg:text-xl mt-2 px-4">
           <div className="text-start">
-            Cras feugiat quam ut magna auctor aliquet. Etiam mauris justo,
-            matt et vehicula quis, blandit non metus. Mauris at odio sapien. Ut
-            cursus a augue ac fringilla. Donec ultrices lorem in bibendum
-            ornare.
+        Strong support serves as a great foundation. A person with determination and drive stands out,
+         not someone who is dull. It's important to stay focused. Progress requires both structure and 
+         flexibility. 
+
           </div>
         </div>
       </div>
@@ -30,12 +30,11 @@ function OurProjects() {
             <img src={imgSrc} alt="" className="w-full h-60 object-cover lg:h-80" />
             <div className="absolute top-0 flex flex-col justify-end items-center text-amber-500 bg-black/30 w-full h-full transition-all duration-500 ease-in-out">
               <div className="text-lg border-b-2 border-amber-500 w-[80%] text-center mb-2">
-                Mumbai, March 2024
+                PUNE, March 2024
               </div>
               <div className="text-2xl text-white text-center mb-2">Industrial Plant Construction</div>
               <div className="text-sm lg:text-lg text-white tracking-tight px-4 text-center max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-[20vh]">
-                Proin ultricies lacus sit amet pulvinar blandit neo. Aenean
-                ligula ipsum, laoreet in purus atomic sen, tincidunt ultrices.
+       A building project is not just about laying bricks; it’s about constructing a vision, layer by layer, until a dream becomes a landmark.
               </div>
             </div>
           </div>
