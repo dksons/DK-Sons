@@ -2,33 +2,49 @@ import React from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
 
 const OurRange = () => {
-    const products = [
-        {   
-            name: 'Hot Rolled Sheet',
-            title: 'Versatile and durable, our hot rolled sheets are used across various industries for applications that require strength and flexibility.',
-            icon: '📄'
-        },
-        {  
-            name: 'Railway Product',
-            title: "We provide high-quality railway products designed for optimal performance and reliability in the transportation industry",
-            icon: '🚂'
-        },
-        { 
-            name: 'Equal Angle Iron', 
-            title: 'Precision-engineered equal angle irons, ideal for construction and structural applications that demand high strength and stability.',
-            icon: '📐' 
-        },
-        { 
-            name: 'Chequered Plate', 
-            title: "Our chequered plates provide superior grip and are widely used in flooring and safety applications.", 
-            icon: '🧱' 
-        },
-        { 
-            name: 'Steel Pipes', 
-            title: "Strong, durable, and corrosion-resistant steel pipes designed for various industrial uses, from construction to fluid transportation.", 
-            icon: '🛢️' 
-        },
-    ];
+const products = [
+    {
+        name: 'Hex Bolts',
+        title: 'High-tensile strength hex bolts ideal for heavy-duty fastening in industrial and construction settings.',
+        icon: '🔩'
+    },
+    {
+        name: 'Nuts & Washers',
+        title: 'Reliable nuts and washers that ensure secure fastening and load distribution in mechanical assemblies.',
+        icon: '🛠️'
+    },
+    {
+        name: 'Threaded Rods',
+        title: 'Versatile threaded rods used for tensioning and supporting structures in construction and machinery.',
+        icon: '📏'
+    },
+    {
+        name: 'Metal Hinges',
+        title: 'Durable metal hinges designed for smooth motion and long-lasting performance in doors, cabinets, and gates.',
+        icon: '🚪'
+    },
+    {
+        name: 'Steel Channels',
+        title: 'Structural steel channels offering strength and stability for framing, supports, and heavy machinery.',
+        icon: '🏗️'
+    },
+    {
+        name: 'Metal Brackets',
+        title: 'Precision-crafted brackets for mounting, reinforcing, or connecting components in metal frameworks.',
+        icon: '📎'
+    },
+    {
+        name: 'Anchor Fasteners',
+        title: 'Heavy-duty anchor fasteners for secure installation of fixtures in concrete, masonry, and solid materials.',
+        icon: '🧱'
+    },
+    {
+        name: 'Wire Mesh',
+        title: 'Robust wire mesh for fencing, filtration, and reinforcement applications in industrial and commercial use.',
+        icon: '🧵'
+    }
+];
+
 
     const features = [
         'Exceptional Strength',

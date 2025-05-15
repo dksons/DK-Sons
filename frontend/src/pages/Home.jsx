@@ -1,4 +1,6 @@
 
+import IndianTestimonials from "@/components/AboutpageFolder/Testimonial";
+import FAQS from "@/components/HompageFolder/Faqs";
 import HeroSection from "@/components/HompageFolder/HeroSection";
 import Introduction from "@/components/HompageFolder/Introduction";
 import OurProducts from "@/components/HompageFolder/OurProducts";
@@ -35,9 +37,16 @@ const Home = () => {
         </h2>
         <OurProducts />
       </div>
-      <div className=" z-10 flex   justify-center flex-col items-center bg-gradient-to-r p2 w-screen">
-        <Sector />
+  
+
+    <div className="z-10 flex    justify-center flex-col items-center bg-gradient-to-r p2  bg-no-repeat bg-center bg-contain bg-brown-vignette     text-white">
+      <IndianTestimonials />
+      
+    </div>
+     <div className=" z-10 flex  bg-no-repeat bg-center bg-contain bg-brown-vignette">
+        <FAQS />
       </div>
+    
     </div>
     </div>
   );

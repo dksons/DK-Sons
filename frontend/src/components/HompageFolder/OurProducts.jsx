@@ -82,7 +82,7 @@ function OurProducts() {
               <img
                 src={product.image} 
                 alt={product.alt}
-                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-125"
+                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
               />
               <div className="p-4 ">
                 <h3 className="text-xl font-semibold mb-2  transition-transform duration-300 hover:translate-x-1 hover:translate-y-1 hover:text-gray-800">
@@ -99,8 +99,9 @@ function OurProducts() {
         </div>
        
       </div>
-      <div onClick={handleDownload} className="cursor-pointer text-blue-600 hover:underline w-full flex justify-center">
-        <p className='bg-gradient-to-r from-yellow-600 via-red-500 text-xl to-rose-600 hover:scale-110 duration-300 transition-all bg-clip-text text-transparent'>View More</p>
+      <div onClick={handleDownload} className="cursor-pointer text-blue-600 hover:underline w-full flex lg:mb-0 mb-7 justify-center">
+        <p className='bg-gradient-to-r from-yellow-600 via-red-500 text-xl to-rose-600 hover:scale-110 duration-300 transition-all bg-clip-text text-transparent'>
+          View More</p>
     </div>
     </section>
   );

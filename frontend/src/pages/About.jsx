@@ -6,10 +6,11 @@ import './about.css'
 import WhyChoseUs from '@/components/AboutpageFolder/WhyChoseUs'
 import OurProjects from '@/components/AboutpageFolder/OurProjects'
 import OurRange from '@/components/AboutpageFolder/OurRange'
+import IndianTestimonials from '@/components/AboutpageFolder/Testimonial'
 function About() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+  },[]);
   return (
     <div className='w-screen bg-no-repeat bg-center bg-contain bg-brown-vignette'>
       <div className='z-12'>
@@ -29,12 +30,10 @@ function About() {
 
       <div className="testimonial h-fit  w-full relative">
         <div className="bg-black/70 w-full h-full">
-          <Testimonial />
+          <IndianTestimonials />
         </div>
       </div>
-      <div className='w-screen '>
-        <OurProjects />
-      </div>
+  
     </div>
   )
 }
