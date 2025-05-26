@@ -27,12 +27,12 @@ function About() {
       <div className='w-screen h-screen'>
         <WhyChoseUs />
       </div>
-
+{/* 
       <div className="testimonial h-fit  w-full relative">
         <div className="bg-black/70 w-full h-full">
           <IndianTestimonials />
         </div>
-      </div>
+      </div> */}
   
     </div>
   )

@@ -19,7 +19,7 @@ const Home = () => {
    <div className='flex justify-center  flex-col items-center bg-gradient-to-r p2  from-white/40 to-white/60'>
 
 
-      <div className="  flex justify-center items-center">
+      <div className="  flex justify-center items-center bg-transparent">
         <Introduction />
       </div>
 
@@ -38,7 +38,7 @@ const Home = () => {
         <OurProducts />
       </div>
   
-
+{/* 
     <div className="z-10 flex    justify-center flex-col items-center bg-gradient-to-r p2  bg-no-repeat bg-center bg-contain bg-brown-vignette     text-white">
       <IndianTestimonials />
       
@@ -46,7 +46,12 @@ const Home = () => {
      <div className=" z-10 flex  bg-no-repeat bg-center bg-contain bg-brown-vignette">
         <FAQS />
       </div>
-    
+     */}
+
+        <div className="z-10 flex w-screen    justify-center flex-col items-center bg-gradient-to-r p2  bg-no-repeat bg-center bg-contain bg-brown-vignette     text-white">
+      <Sector />
+      
+    </div>
     </div>
     </div>
   );

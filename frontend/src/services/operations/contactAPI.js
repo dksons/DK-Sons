@@ -3,6 +3,7 @@ import { apiConnector } from "../apiconnector";
 import { contactusEndpoint } from "../api";
 
 const {CONTACT_US_API} = contactusEndpoint;
+const {POST_BLOG_API} = contactusEndpoint;
 
 export async function contactUsForm(countrycode, email, firstName, lastName, message, phoneNo) {
     const toastId = toast.loading("Loading...");

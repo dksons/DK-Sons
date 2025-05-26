@@ -1,9 +1,9 @@
 import React from 'react';
-import img1 from '../../assets/brass.jpeg'
-import img2 from "../../assets/zinchardware.jpg";
-import img3 from "../../assets/steel.jpeg";
-import img4 from "../../assets/iron2.jpg";
-import img5 from "../../assets/chain.jpeg";
+import img1 from '../../assets/Brass.jpg'
+import img2 from "../../assets/Zinc.jpg";
+import img3 from "../../assets/Steel.jpg";
+import img4 from "../../assets/Iron.jpg";
+import img5 from "../../assets/Iron.jpg";
 
 
 function OurProducts() {
@@ -82,9 +82,9 @@ function OurProducts() {
               <img
                 src={product.image} 
                 alt={product.alt}
-                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+                className="w-full h-48 object-cover"
               />
-              <div className="p-4 ">
+              <div className="p-4 cursor-pointer ">
                 <h3 className="text-xl font-semibold mb-2  transition-transform duration-300 hover:translate-x-1 hover:translate-y-1 hover:text-gray-800">
                   {product.title}
                 </h3>
