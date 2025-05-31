@@ -12,6 +12,9 @@ import Blog from './pages/Blog'
 import Login from './components/common/Login'
 import { verifyuser } from './services/operations/authApi'
 import { AllBlogContext } from './context/contextapi'
+import Readmore from './components/common/Readmore'
+import OurProducts from './components/HompageFolder/OurProducts'
+import SeprateOurProduct from './pages/SeprateOurProduct'
 
 
 
@@ -25,35 +28,19 @@ useEffect(()=>{
   }
   reverify()
 },[])
-  const debounceScroll = (fn, delay) => {
 
-    let timerid;
 
-    return function () {
-      clearTimeout(timerid)
-      fn(false)
-      timerid = setTimeout(() => {
-        fn(true)
-      }, delay);
-    }
+
+const scroll=()=> {
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  const [isNav, setisNav] = useState(true);
-
-
-  useEffect(() => {
-    const scrolling = debounceScroll(setisNav, 600)
-
-    window.addEventListener('scroll', scrolling)
-
-
-
-  })
   return (
     <div className='z-10 overflow-x-hidden  bg-brown-vignette'>
       <div className=" min-h-screen  flex flex-col ">
-        <div className='fixed z-50'>
-          {isNav && <Nav />}
+        <div className='absolute  overflow-x-hidden lg:w-[90%] z-50'>
+          { <Nav />}
         </div>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -64,13 +51,37 @@ useEffect(()=>{
           <Route path="/Terms_And_Conditons" element={<T_C />}></Route>
           <Route path="/Blogs" element={<Blog />}></Route>
           <Route path="/login" element={<Login />}></Route>
-
+           <Route path="/Readmore/:post" element={<Readmore />}></Route>
+           <Route path="/our-products" element={<SeprateOurProduct />}></Route>
 
         </Routes>
       </div>
       <div className='r -z-1 bottom-0   flex justify-center  flex-col items-center bg-gradient-to-r p2  from-white/40 to-white/60'>
         <Footer />
       </div>
+       <div
+      onClick={scroll}
+      style={{
+        position: 'fixed',
+        bottom: '20px',
+        alignContent:'center',  
+        right: '20px',
+        zIndex: 100,
+        cursor: 'pointer',
+        backgroundColor:'white',
+        borderRadius:'50%'
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="40"
+        width="40"
+        viewBox="0 0 24 24"
+        fill="$fffff"
+      >
+        <path d="M12 2L6 8h4v8h4V8h4l-6-6z" />
+      </svg>
+    </div>
     </div>
   )
 }

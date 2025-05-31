@@ -49,7 +49,7 @@ function HeroSection() {
             <span className='text-[11vw] inline-block  text-center'>
              in Metal Hardware 
             </span>    
-            <span className='text-[12vw] bg-clip-text text-transparent bg-gradient-to-l z-10  via-red-400 to-sky-300 text-center inline-block '>
+            <span className='text-[12vw] bg-clip-text text-transparent bg-gradient-to-l from-white z-10  via-red-400 via-indigo-200 to-white text-center inline-block '>
               {}    Since 1990
             </span>     
           </h1>   

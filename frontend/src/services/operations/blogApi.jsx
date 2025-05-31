@@ -6,14 +6,13 @@ import { AllBlogContext } from "@/context/contextapi";
 const {POST_BLOG_API,ALL_BLOGS_API} = contactusEndpoint;
 
 
-export async function BlogPostForm(author_name,content,title,occupation,date) {
-    console.log(author_name,content,title,occupation,date);
+export async function BlogPostForm(formData) {
+    console.log(formData);
+    
     
     const toastId = toast.loading("Loading...");
     try {
-      const response = await apiConnector("POST", POST_BLOG_API, {
-      author_name,content,title,occupation,date
-      });
+      const response = await apiConnector("POST", POST_BLOG_API,formData);
   
       console.log("Contact Us RESPONSE ... ", response);
   

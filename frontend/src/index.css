@@ -9,6 +9,13 @@ body{
   font-weight: 600;
   font-style: normal;
 }
+.ProseMirror {
+  min-height: 150px;
+  outline: none;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+}
 
 @custom-variant dark (&:is(.dark *));
 
