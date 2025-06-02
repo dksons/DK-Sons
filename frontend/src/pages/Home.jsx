@@ -1,6 +1,4 @@
 
-import IndianTestimonials from "@/components/AboutpageFolder/Testimonial";
-import FAQS from "@/components/HompageFolder/Faqs";
 import HeroSection from "@/components/HompageFolder/HeroSection";
 import Introduction from "@/components/HompageFolder/Introduction";
 import OurProducts from "@/components/HompageFolder/OurProducts";
