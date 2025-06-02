@@ -10,7 +10,7 @@ function WhyChoseUs() {
         "Quality Assurance"
     ])
     return (
-        <div className='w[90%] h-full flex  justify-center items-center lg:flex-row flex-col'>
+        <div className='w[90%] h-full flex  justify-center items-center lg:flex-row flex-col px-3'>
             <div className='left lg:w-[50%] justify-center items-center flex flex-col lg:mt-0 mt-15'>
                 <div className='lg:text-3xl text-2xl  font-extrabold lg:w-[77%] w-full h-fit mb-10  text-start lg:ml-5 ml-10 bg-clip-text  bg-gradient-to-b  text-transparent from-pink-500 via-yellow-600 to-white'>
                     WHY CHOOSE US
