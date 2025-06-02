@@ -1,8 +1,8 @@
 import React from "react";
 import "./cssFiles/Introduction.css";
-import img1 from "../../assets/img1.png";
+import img1 from "../../assets/Die.jpg";
 import img2 from "../../assets/img2.png";
-import img3 from "../../assets/img3.png";
+import img3 from "../../assets/Sand.jpg";
 
 function Introduction() {
   return (
@@ -15,19 +15,24 @@ function Introduction() {
         
         </h1>
         <div className="lg:text-2xl  text-start text-gray-700 leading">
-          At{" "}
-          <span className="bg-gradient-to-l from-yellow-900 to-red-500 bg-clip-text text-transparent">
-            {" "}
-            DK-SONS
-          </span>
-          ,we specialize in manufacturing premium metal hardware components with
-          meticulous craftsmanship and superior materials. Our extensive range
-          of brass, zinc, steel, and iron products serves multiple industries
-          with uncompromising 
-          <span className="bg-gradient-to-r   from-yellow-600 to-red-500 bg-clip-text text-transparent mr-2">
-            {` `}quality and precision
-          </span>
-          from concept to creation.
+       
+  <div className=" text-center inline">
+    <span>
+        At{"    "}
+    </span>
+      <span className="bg-gradient-to-r from-yellow-600 to-red-600 bg-clip-text text-transparent font-bold">
+        DK-SONS
+      </span>
+      {" "}we specialize in manufacturing premium metal hardware components with
+      meticulous craftsmanship and superior materials. Our extensive range
+      of brass, zinc, steel, and iron products serves multiple industries
+      with uncompromising{" "}
+      <span className="bg-gradient-to-r from-yellow-600 to-red-600 bg-clip-text text-transparent font-bold">
+        quality and precision
+      </span>
+      {" "}from concept to creation.
+    </div>
+        
         </div>
       </div>
 

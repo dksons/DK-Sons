@@ -1,71 +1,95 @@
-import React, { useEffect, useState } from 'react'
-import './cssFiles/Nav.css'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import './cssFiles/Nav.css';
+import { Link } from 'react-router-dom';
 import Subnav from './Subnav';
 import Hamburger from '../HompageFolder/ui/Hamburger';
 
 function Nav() {
-  const [MenuVisible,setMenuVisible]=useState(false);
-  const [hamburgerVisible,setHamburgerVisible]=useState(false)
+  const [menuVisible, setMenuVisible] = useState(false);
+  const [hamburgerVisible, setHamburgerVisible] = useState(false);
 
-  useEffect(()=>{
-const handleWidth=()=>{
-  console.log(window.innerWidth)
-  if(window.innerWidth<700){
-  setHamburgerVisible(true)
-  } else  {  setHamburgerVisible(false)
-    setMenuVisible(true)
-  }
+  const handleResize = () => {
+    const width = window.innerWidth;
+    if (width < 1024) {
+      setHamburgerVisible(true);
+      setMenuVisible(false); // Hide menu by default on small screens
+    } else {
+      setHamburgerVisible(false);
+      setMenuVisible(true); // Always show menu on large screens
+    }
+  };
 
-}
-handleWidth();
-    window.addEventListener('resize',handleWidth)
+  useEffect(() => {
+    handleResize(); // initial check
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
-  return ()=>  window.addEventListener('resize',handleWidth)
-      },[])
+  const [links] = useState(['Our Services', 'Our Vision', 'Contact-Us']);
 
-
-      useEffect(()=>{
-        console.log(hamburgerVisible)
-      },[hamburgerVisible])
-      
-
-  
-
-  const [Links,setLinks]=useState(['Our Services','Our Vision','Contact-Us'])
   return (
-    <header className='lg:w-[98vw] w-screen text-white flex px-4  z-60 justify-between items-center '>
-     <div className='flex items-center justify-center '>
-     <span className='logo w-17 h-20 inline-block mb-3 '></span>
-     <span className='inline-block text-white text-[52px] p-1 text-center' >|</span>
-     <div className='flex items-center tracking-wide flex-col justify-center'>
-     <span className='block text-clip text-[20px]'>DK SONS</span>
-     <span className='block text-white text-[10px]'>METAL HARDWARE</span>
-     </div>
-     </div>
-     <div className='flex w-[40%] font-extrabold justify-end  items-center' >
-   { hamburgerVisible&&<div  className="  cursor-pointer" onClick={()=>setMenuVisible((prev)=>!prev)}> 
-      <Hamburger/>
-     </div>}
-    <div className={`flex lg:w-[50%] w-[60vw]  ${hamburgerVisible?'bg-[#18181B]/20 text-2xl  rounded top-0 right-0 w-fit h-fit justify-start  ':''}  flex-col justify-between   
-    absolute  text-[20px] lg:text-lg text-black lg:top-0 lg:items-center`}>
-{<div>
-{MenuVisible && (
-  <div
-    className={`m-1 flex sm:absolute  sm:right-0 sm:flex-col  ${hamburgerVisible?'w-fit    h-[40vh] top-0 z-50 justify-evenly items-center  ':''}
-               w-full flex-col  px-3 py-5   z-50 
-                lg:flex-row lg:w-full lg:justify-around lg:right-10 text-white  `} >
-<Subnav hamburgerVisible={hamburgerVisible}/>
-  </div>
-)}
-</div>}
+    <div className="w-screen flex justify-evenly items-center relative">
+      <header className="w-full lg:w-[1200px] px-4 py-3 text-white flex justify-between items-center relative">
+        
+        {/* Logo Section */}
+        <div className="flex items-center z-50 relative">
+          <span className="logo w-17 h-20 inline-block mb-3"></span>
+          <span className="text-white text-[42px] px-2">|</span>
+          <div className="flex flex-col items-start leading-tight">
+            <span className="text-[22px] font-semibold">DK SONS</span>
+            <span className="text-[13px] tracking-wider">METAL HARDWARE</span>
+          </div>
+        </div>
 
+        {/* Navigation & Hamburger */}
+        <div className="relative flex items-center justify-between lg:w-fit z-40">
+          {hamburgerVisible && (
+            <div 
+              className="cursor-pointer z-50 relative" 
+              onClick={() => setMenuVisible(prev => !prev)}
+            >
+              <Hamburger />
+            </div>
+          )}
+
+          {/* Menu */}
+          <div
+            className={`
+              ${hamburgerVisible ? 
+                `fixed top-0 left-0 w-full h-screen bg-black/20 backdrop-blur-sm
+                 flex flex-col justify-center items-center text-center
+                 ${menuVisible ? 'flex' : 'hidden'}` 
+                : 
+                `lg:static lg:flex lg:w-auto lg:bg-transparent
+                 ${menuVisible ? 'flex' : 'hidden'} lg:flex-row lg:items-center`
+              }
+              gap-6 lg:gap-x-14 lg:text-xl text-white z-30 transition-all duration-300
+            `}
+          >
+            {/* Close button for mobile */}
+            {hamburgerVisible && menuVisible && (
+              <button 
+                className="absolute top-6 right-6 text-white text-3xl font-bold z-50"
+                onClick={() => setMenuVisible(false)&&setMenuVisible(false)}
+              >
+                
+              </button>
+            )}
+            
+            <Subnav hamburgerVisible={hamburgerVisible} />
+          </div>
+        </div>
+
+        {/* Overlay for mobile menu */}
+        {hamburgerVisible && menuVisible && (
+          <div 
+            className="fixed inset-0 bg-black/50 z-20"
+            onClick={() => setMenuVisible(false)}
+          />
+        )}
+      </header>
     </div>
-
-
-     </div>
-    </header>
-  )
+  );
 }
 
-export default Nav
+export default Nav;

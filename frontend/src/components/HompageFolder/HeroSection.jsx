@@ -14,6 +14,12 @@ function HeroSection() {
     return () => clearTimeout(timer);
   }, []);
 
+    const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/catalog.pdf"; // Make sure the PDF is in the public folder
+    link.download = "catalog.pdf";
+    link.click();
+  };
 
 
   return (
@@ -36,30 +42,42 @@ function HeroSection() {
 
    
 <div className='w-full h-[40%]'>
+   <h1 className='lg:hidden'>    
+            <span className='text-[20vw] block'>
+            Excellence 
+            </span>    
+            <span className='text-[11vw] inline-block  text-center'>
+             in Metal Hardware 
+            </span>    
+            <span className='text-[12vw] bg-clip-text text-transparent bg-gradient-to-l from-white z-10  via-red-400 via-indigo-200 to-white text-center inline-block '>
+              {}    Since 1990
+            </span>     
+          </h1>   
 <center>
-<h1 className="text-[29px] font-extrabold  sm:text-[20px] md:text-[25px] lg:text-[30px] xl:text-[80px] overflow-hidden whitespace-nowrap mb-3">
+ <h1 className="hidden text-[27px] sm:block font-extrabold  sm:text-[60px] md:text-[55px] lg:text-[60px] xl:text-[80px] overflow-hidden whitespace-nowrap mb-3">
   <span className="pb-2">
       Excellence in Metal  Hardware
-     <span className=""><br/></span> 
-   {}  Since 1990
+     <span className=" "><br/></span> 
+   {} <span className=' bg-clip-text text-transparent bg-gradient-to-l  from-white/70  via-red-400 to-sky-200'> Since 1990</span>
   </span>
-</h1>
+</h1> 
 
-      <div className='w-fit'>
+
+      {/* <div className='w-fit'>
       <h1 className='overflow-hidden whitespace-nowrap mb-3'>
       <span className="typing-animation  inline text-[20px]  font-extrabold sm:text-[18px] md:text-[24px] lg:text-[28px]  mb-6 bg-amber-200 ">
           Let's explore amazing things together!
         </span>
         </h1>
-      </div>
+      </div> */}
 
-        <div className="w-full flex flex-col justify-center sm:flex-row sm:items-center sm:space-x-4 space-y-3 sm:space-y-0">
-          <button className="px-5 lg:py-3 lg:w-[20%] sm:px-2 py-2 transition-all duration-200 ease-in-out border border-white/20 hover:bg-black hover:text-white bg-white rounded-2xl text-black font-semibold">
+        <div className="lg:w-full flex w-50 flex-col justify-center sm:flex-row sm:items-center sm:space-x-4 space-y-3 sm:space-y-0">
+          <button onClick={handleDownload} className="px-5 lg:py-3 lg:w-[20%]  sm:px-2 py-2 transition-all duration-200 ease-in-out border border-white/20 hover:bg-black hover:text-white bg-[#FFD563] rounded-2xl text-black font-semibold">
             Explore Our Products
           </button>
-          <button className="px-5 lg:py-3 lg:w-[20%] sm:px-2 py-2 transition-all duration-200 ease-in-out border border-white/20 bg-amber-300 hover:bg-blue-950 hover:text-white text-black rounded-2xl font-semibold">
+          {/* <button className="px-5 lg:py-3 lg:w-[20%] sm:px-2 py-2 transition-all duration-200 ease-in-out border border-white/20 bg-amber-300 hover:bg-blue-950 hover:text-white text-black rounded-2xl font-semibold">
             Request Custom Quote
-          </button>
+          </button> */}
         </div>
 </center>
 </div>

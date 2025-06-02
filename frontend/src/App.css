@@ -6,3 +6,8 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* TipTap Basic Styles */
+.ProseMirror {
+  min-height: 150px;
+  outline: none;
+}
