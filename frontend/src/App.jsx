@@ -22,7 +22,7 @@ const App = () => {
 
 const routePaths = [
   "/",
-  "/Contact-us",
+  "/Contact-Us",
   "/About-us",
   "/privacy-policy",
   "/error",
