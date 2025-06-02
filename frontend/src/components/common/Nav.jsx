@@ -32,7 +32,7 @@ function Nav() {
       <header className="w-full lg:w-[1200px] px-4 py-3 text-white flex justify-between items-center relative">
         
         {/* Logo Section */}
-     <Link  to={'/'}>
+   <Link  to={'/'}>
         <div className="flex items-center z-50 relative">
           <span className="logo w-17 h-20 inline-block mb-3"></span>
           <span className="text-white text-[42px] px-2">|</span>
