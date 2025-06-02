@@ -91,13 +91,8 @@ export default function Privacy() {
       {/* Logo and Header Section */}
       <div className="max-w-6xl mx-auto py-16 px-6 flex flex-col items-center">
         {/* Logo */}
- <div className='flex items-center justify-center mb-10'>
-     <span className='logo lg:w-28 lg:h-32 w-20 h-23   inline-block mb-3 '></span>
-     <span className='inline-block text-white lg:text-[70px] text-[60px] p-1 text-center' >|</span>
-     <div className='flex items-center tracking-wide flex-col justify-center'>
-     <span className='block text-clip text-[23px] lg:text-[30px]'>DK SONS</span>
-     <span className='block text-white text-[10px] lg:text-[15px]'>METAL HARDWARE</span>
-     </div>
+ <div className='flex items-center justify-center mb-15'>
+   
      </div>
         
         {/* Main Heading */}
