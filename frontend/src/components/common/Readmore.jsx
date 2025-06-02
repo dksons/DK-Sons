@@ -86,7 +86,7 @@ function Readmore() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>5 min read • Published today</span>
+                    <span>5 min read • Published on {post?.date}</span>
                   </div>
                 </div>
               </div>

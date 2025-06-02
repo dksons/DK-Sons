@@ -115,7 +115,7 @@ export default function IndianTestimonials() {
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="md:w-1/3 flex flex-col items-center">
                 <div className="relative">
-                  <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-amber-300">
+                  <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-amber-400">
                     <img 
                       src={activeTestimonial.image} 
                       alt={activeTestimonial.author} 

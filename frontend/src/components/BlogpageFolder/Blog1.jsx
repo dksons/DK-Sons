@@ -403,7 +403,7 @@ const SubmitForm = async (data) => {
                 </div>
 
                 {/* Tab Navigation */}
-                <div className="flex justify-center mb-3">
+              {  userdata.isLoggedin &&<div className="flex justify-center mb-3">
                     {<div className="inline-flex rounded-md shadow-sm">
                         <button
                             onClick={() => setActiveTab('posts')}
@@ -424,7 +424,7 @@ const SubmitForm = async (data) => {
                             Create Post
                         </button>
                     </div>}
-                </div>
+                </div>}
 
                 {/* Form Section */}
                 {userdata.isLoggedin && <div>

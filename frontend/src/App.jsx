@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Nav from './components/common/Nav'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Home from './pages/Home'
 import Footer from './components/common/Footer'
 import ContactUs from './pages/ContactUs'
@@ -19,6 +19,34 @@ import SeprateOurProduct from './pages/SeprateOurProduct'
 
 
 const App = () => {
+
+const routePaths = [
+  "/",
+  "/Contact-Us",
+  "/About-us",
+  "/privacy-policy",
+  "/error",
+  "/Terms_And_Conditons",
+  "/Blogs",
+  "/login",
+  "/Readmore/:post",
+  "/our-products",
+];
+
+const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const isDynamicMatch = location.pathname.startsWith("/Readmore/");
+    const isValid = routePaths.includes(location.pathname) || isDynamicMatch;
+console.log(isValid);
+
+    if (!isValid) {
+      navigate("/error");
+    }
+  }, [location.pathname, navigate]);
+
+
    const {userdata,setuserdata}=useContext(AllBlogContext)
 useEffect(()=>{
   const reverify=async()=>{
