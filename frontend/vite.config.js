@@ -12,7 +12,7 @@ export default defineConfig({
   },
   server:{
     proxy:{
-      '/api':'http://localhost:3002'
+      '/api':'https://165.22.132.247:8090/preview/dkbackend.api'
     }
   }
 })
