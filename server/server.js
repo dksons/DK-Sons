@@ -25,7 +25,12 @@ cloudinary.config({
 });
 
 app.use(cors({
-  origin:"http://localhost:5173/",
+ origin: [
+  "http://www.dksons.co",
+  "http://localhost:5173",
+  "https://www.dksons.co"
+]
+
   credentials: true // 🔥 important for cookies
   
 }));
