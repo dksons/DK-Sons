@@ -26,8 +26,6 @@ cloudinary.config({
 
 app.use(cors({
  origin: [
-  "http://www.dksons.co",
-  "http://localhost:5173",
   "https://www.dksons.co"
 ]
 
