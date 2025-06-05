@@ -1,6 +1,6 @@
 
 
-const BASE_URL = import.meta.env.VITE_BASE_URL||'/api/v1';
+const BASE_URL = 'https://165.22.132.247:8090/preview/dkbackend.api/api/v1'||import.meta.env.VITE_BASE_URL||'/api/v1';
 
 
 export const contactusEndpoint = {
